@@ -1,0 +1,97 @@
+body{
+    background-color: #cae5fd;
+    margin-top: 20px;
+    margin-bottom: 400px;
+padding: 20px;
+}
+.calculator{
+    background-color: lightblue;
+    width: 230px;
+    height: 500px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    box-shadow: 5px 5px 15px grey;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: darkblue;
+} 
+
+.Name {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(31, 28, 28);
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px rgba(255, 50, 50, 0.8),
+                 0 0 20px rgba(255, 0, 0, 0.5),
+                 0 0 30px rgba(255, 0, 0, 0.3);
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    animation: glowPulse 2s infinite alternate;
+}
+
+.Name:hover {
+    color: #fff;
+    background: linear-gradient(90deg, rgb(58, 22, 22), rgb(0, 0, 0));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 25px rgba(22, 21, 21, 0.9),
+                 0 0 50px rgba(19, 18, 18, 0.7);
+    transform: scale(2.0);
+    transition: all 0.4s ease;
+    animation: bounce 0.4s ease;
+}
+
+/* glowing pulse animation */
+@keyframes glowPulse {
+    from {
+        text-shadow: 0 0 10px rgba(15, 15, 15, 0.6),
+                     0 0 20px rgba(7, 7, 7, 0.4);
+    }
+    to {
+        text-shadow: 0 0 20px rgb(15, 15, 15),
+                     0 0 40px rgba(19, 18, 18, 0.8);
+    }
+}
+
+/* bounce effect on hover */
+@keyframes bounce {
+    0% { transform: scale(1.2) translateY(0); }
+    50% { transform: scale(1.6) translateY(-10px); }
+    100% { transform: scale(1.5) translateY(0); }
+}
+
+button{
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px grey;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover{
+    background-color: lightgrey;
+    transform: scale(1.1);
+}
+
+#display{
+    width: 90%;
+    height: 50px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 5px grey;
+    background-color: white;
+}
